@@ -13,6 +13,14 @@ h1 {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 30%);
   font-size: 40px;
 }
+h2 {
+    font-weight: bold;
+    color: #000000
+    font-family: arial;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 30%);
+    font-size: 30px;
+}
 h3 {
   color: black;
   font-family: monospace;
