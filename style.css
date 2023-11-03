@@ -47,7 +47,6 @@ button {
   background-color: #b69ee9;
   font-family: cursive;
   box-shadow: 5px 5px 2px rgb(0, 0, 0, 30%);
-  width: 100px;
 }
 button:hover {
   background-color: #93f3a4;
