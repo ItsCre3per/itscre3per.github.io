@@ -4,12 +4,12 @@ body {
 .par {
   color: #000;
   font-size: 20px;
-  font-family : arial;
+    font-family: arial, serif;
 }
 .miniPar {
   color: #000;
   font-size: 15px;
-  font-family: arial;
+    font-family: arial, serif;
 }
 .title {
   font-weight: bold;
@@ -22,7 +22,7 @@ body {
 .subtitle {
     font-weight: bold;
     color: #000;
-    font-family: arial;
+    font-family: arial, serif;
     text-align: center;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 30%);
     font-size: 30px;
@@ -53,10 +53,7 @@ ul {
   margin-right: auto;
 }
 button {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 15px;
   background-color: #b69ee9;
   font-family: cursive;
   box-shadow: 5px 5px 2px rgb(0, 0, 0, 30%);
@@ -64,4 +61,11 @@ button {
 button:hover {
   background-color: #93f3a4;
   box-shadow: 5px 5px 1px rgb(0,0,0,30%)
+}
+.custom_button {
+    padding: 5px 15px;
+    background-color: #10531c;
+    font-family: cursive;
+    box-shadow: 5px 5px 2px rgb(0, 0, 0, 30%);
+
 }
