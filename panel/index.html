@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/style.css">
+        <!-- This should be dictated by JS as either "Log In" or "Creeper's Control Panel" -->
+        <title>
+            Log In
+        </title>
+    </head>
+    <body onload="checkCookie('username');">
+        <div style="padding:5px; margin:5px;">
+            <div style="position:absolute;z-index:1;">
+                <a href="../index.html"><button>Home</button></a>
+                <a href="../LOTRGame/"><button>LOTR Game</button></a>
+                <a href="index.html"><button>Control Panel</button></a>
+                <a href="https://youtube.com/@itscre3per"><button>My YouTube</button></a>
+            </div>
+            <a href="index.html"><button id="logOutButton" onclick="
+                clearCookie('username', '');" style="float:right; display:none;">Log Out</button></a>
+            <!-- This should be determined by the same script as the title above ^^^ -->
+            <div id="loginDiv">
+                <h1 class="title">Log In</h1>
+
+                <form id="login" method="post" style="text-align:center;" onsubmit="onAttemptLogin()">
+                    <label for="username" class="par">Username:</label>
+                    <input type="text" name="username" id="username" style="background-color:#89da6a" required><br><br>
+                    <label for="password" class="par">Password:</label>
+                    <input type="password" name="password" id="password" style="background-color:#89da6a" required><br><br>
+                    <input type="submit" value="Submit" class="custom_button" style="color:#a5b5a6">
+                </form>
+            </div>
+            <div id="loggedInDiv" style="display:none;">
+                <h1 class="title">Creeper's Control Panel</h1>
+                <p class="par" style="text-align:center;">Welcome, ItsCre3per</p>
+            </div>
+        </div>
+    </body>
+    <script src="CookieHandler.js"></script>
+</html>
