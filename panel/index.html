@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/style.css">
-        <!-- This should be dictated by JS as either "Log In" or "Creeper's Control Panel" -->
         <title>
             Log In
         </title>
@@ -18,11 +17,10 @@
             </div>
             <a href="index.html"><button id="logOutButton" onclick="
                 clearCookie('username', '');" style="float:right; display:none;">Log Out</button></a>
-            <!-- This should be determined by the same script as the title above ^^^ -->
             <div id="loginDiv">
                 <h1 class="title">Log In</h1>
 
-                <form id="login" method="post" style="text-align:center;" onsubmit="onAttemptLogin()">
+                <form id="login" style="text-align:center;" onsubmit="onAttemptLogin()">
                     <label for="username" class="par">Username:</label>
                     <input type="text" name="username" id="username" style="background-color:#89da6a" required><br><br>
                     <label for="password" class="par">Password:</label>
