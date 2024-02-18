@@ -30,10 +30,28 @@
                 </form>
             </div>
             <div id="loggedInDiv" style="display:none;">
+                <!--
                 <h1 class="title">Creeper's Control Panel</h1>
                 <p class="par" style="text-align:center;">Welcome, ItsCre3per</p>
+                -->
             </div>
         </div>
+    <script type="text/babel">
+        // A simple test at using React.js. Can be swapped out for simple HTML if necessary.
+        const root = ReactDOM.createRoot(document.getElementById('loggedInDiv'));
+        const username = getCookie('username');
+        function Test() {
+            let elements = [];
+            elements.push(<h1 className="title">Creeper's Control Panel</h1>);
+            elements.push(<p className="par" style={{textAlign: "center"}}>Welcome, {username}</p>);
+            return elements.map(element => <>{element}</>);
+        }
+
+        root.render(< Test />);
+    </script>
     </body>
     <script src="CookieHandler.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </html>
